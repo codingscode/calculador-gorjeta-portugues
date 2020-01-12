@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>Calculador de gorjeta</title>
+
+    <link rel="stylesheet" href="./css.css">
+  </head>
+ 
+
+  <body>
+    <div id="container">
+      <h1>Calculador de gorjeta</h1>
+      <div id="calculadora">
+        <form>
+          <p> Valor da conta</p>
+          <p>
+          <input id="quantConta" tyle="text" placeholder="Valor da conta">
+          <p>Como foi o serviço?</p>
+          <p>
+          <select id="qualidadeServico">
+            <option value="0.3">30&#37; &#45; Muito bom</option>
+            <option value="0.2">20&#37; &#45; Bom</option>
+            <option value="0.15">15&#37;&#45; Regular</option>
+            <option value="0.10">10&#37;&#45; Ruim</option>
+            <option value="0.05">5&#37;&#45; Péssimo</option>
+          </select>
+        </form>
+        <p>Quantas pessoas estão dividindo a conta?</p>
+        <p>
+        <input id="quantPessoas" type="text" placeholder="número de pessoas">
+        <button type="button" id="calcular">Calcular</button>
+      </div>
+      <div id="gorjetaTotal">
+        <sup>R$</sup><span id="gorjeta">0.00</span>
+        <small id="cada">cada</small>
+      </div>
+    </div>
+
+    <script type="text/javascript" src='./js.js'></script>
+    <script type="text/javascript" src='../../jquery-3.4.1.js'></script>
+  </body>
+</html>
